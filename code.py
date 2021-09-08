@@ -92,7 +92,7 @@ while True:
     if key_event and key_event.pressed:
         key = key_event.key_number
         x, y = key_to_grid(key)
-        if keys[x][y] == None and key > 3:
+        if keys[x][y] == None and key >= 3:
             keys[x][y] = player_turn
             key_colors[x][y] = player_turn
             print("{} {},{}".format(key, x, y))
